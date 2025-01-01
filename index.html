@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Login</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="landing">
+        <div class="container">
+            <div class="logo-container">
+                <div class="circle">
+                    <div class="rupee-sign">₹</div>
+                </div>
+            </div>
+            
+            <h1 class="title">eXPENSES</h1>
+            <p class="subtitle">take care of your savings and manage your expenses</p>
+            
+            <div class="buttons">
+                <button class="btn" onclick="document.querySelector('.forms-section').scrollIntoView()">LOGIN</button>
+                <button class="btn" onclick="window.location.href='guest.html'">GUEST</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="forms-section">
+        <div class="forms-container">
+            <div class="form">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="form">
+                <h2>Sign Up</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-confirm">Confirm Password</label>
+                        <input type="password" id="signup-confirm" required>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <div class="forms-section">
+        <div class="wrapper">
+        <div class="card-switch">
+            <label class="switch">
+            <input class="toggle" type="checkbox">
+            <span class="slider"></span>
+            <span class="card-side"></span>
+            <div class="flip-card__inner">
+                <div class="flip-card__front">
+                    <div class="title">Log in</div>
+                    <form action="" class="flip-card__form">
+                        <input type="email" placeholder="Email" name="email" class="flip-card__input">
+                        <input type="password" placeholder="Password" name="password" class="flip-card__input">
+                        <button class="flip-card__btn">Let`s go!</button>
+                    </form>
+                </div>
+                <div class="flip-card__back">
+                    <div class="title">Sign up</div>
+                    <form action="" class="flip-card__form">
+                        <input type="name" placeholder="Name" class="flip-card__input">
+                        <input type="email" placeholder="Email" name="email" class="flip-card__input">
+                        <input type="password" placeholder="Password" name="password" class="flip-card__input">
+                        <button class="flip-card__btn">Confirm!</button>
+                    </form>
+                </div>
+            </div>
+            </label>
+        </div>   
+    </div>
+</body>
+</html> 
