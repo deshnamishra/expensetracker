@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <div class="landing">
-        <div class="container">
-            <div class="logo-container">
-                <div class="circle">
-                    <div class="rupee-sign">₹</div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <div class="logo-container">
+                    <div class="circle">
+                        <div class="rupee-sign">₹</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h1 class="brand-name">eXPENSES</h1>
+                    <p class="brand-subtitle">manage your expenses</p>
                 </div>
             </div>
             
-            <h1 class="title">eXPENSES</h1>
-            <p class="subtitle">take care of your savings and manage your expenses</p>
-            
-            <div class="buttons">
-                <button class="btn" onclick="document.querySelector('.forms-section').scrollIntoView()">LOGIN</button>
-                <button class="btn" onclick="window.location.href='guest.html'">GUEST</button>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#reports">Reports</a>
+                <a href="#settings">Settings</a>
             </div>
         </div>
-    </div>
+    </nav>
 
     <!-- <div class="forms-section">
         <div class="forms-container">
