@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -432,3 +432,4 @@ body {
     color: var(--font-color);
     cursor: pointer;
   } 
+  
