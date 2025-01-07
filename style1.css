@@ -11,14 +11,20 @@ body {
   background: linear-gradient(to bottom right, #e6f3ff, #d1e9ff);
 }
 
-/* Navbar */
+/* Updated Floating Navbar */
 .navbar {
+  position: relative;
+  top: 20px; /* Add some space from the top */
+  width: 90%; /* Reduce width to make it float */
+  max-width: 1200px; /* Maximum width */
   height: 80px;
+  margin: 0 auto; /* Center horizontally */
   display: flex;
   align-items: center;
   padding: 0 50px;
   background-color: white;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 12px; /* Add rounded corners */
 }
 
 .nav-container {
@@ -28,13 +34,13 @@ body {
   justify-content: space-between;
 }
 
+/* Rest of your existing navbar styles remain the same */
 .brand {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* Original Logo Styles */
 .logo-container {
   width: 40px;
   height: 40px;
@@ -83,7 +89,6 @@ body {
   margin: 0;
 }
 
-/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 30px;
@@ -103,22 +108,23 @@ body {
   background-color: #f0f7ff;
 }
 
-/* Media Queries */
+/* Updated Media Query */
 @media (max-width: 768px) {
   .navbar {
-      padding: 0 20px;
+    width: 95%; /* Slightly wider on mobile */
+    padding: 0 20px;
   }
   
   .brand-subtitle {
-      display: none;
+    display: none;
   }
   
   .nav-links {
-      gap: 15px;
+    gap: 15px;
   }
   
   .nav-links a {
-      padding: 6px 12px;
+    padding: 6px 12px;
   }
 }
 
