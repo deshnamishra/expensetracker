@@ -1,0 +1,137 @@
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e6f3ff, #d1e9ff);
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    text-align: center;
+    
+  }
+  
+  .form_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EDDCD9;
+    height: 500px;
+    width: 500px;
+    border: 2px solid #264143;
+    border-radius: 20px;
+    box-shadow: 3px 4px 0px 1px #E99F4C;
+  }
+  
+  .title {
+    color: #264143;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  .sub_title {
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10px;
+  }
+  
+  .form_style {
+    outline: none;
+    border: 2px solid #264143;
+    box-shadow: 3px 4px 0px 1px #E99F4C;
+    width: 290px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  .form_style:focus, .btn:focus {
+    transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px #E99F4C;
+  }
+  
+  .btn {
+    padding: 15px;
+    margin: 25px 0px;
+    width: 290px;
+    font-size: 15px;
+    background: #DE5499;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0px 0px #E99F4C;
+  }
+  
+  .btn:hover {
+    opacity: .9;
+  }
+  
+  .link {
+    font-weight: 800;
+    color: #264143;
+    padding: 5px;
+  }
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #0c66ed;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  button span:nth-child(6) {
+    position: relative;
+  }
+  
+  button span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  button span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  button span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+    
