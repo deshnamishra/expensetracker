@@ -76,7 +76,7 @@ body {
 
 .brand-name {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 2px;
   color: #333;
   margin: 0;
@@ -84,6 +84,7 @@ body {
 
 .brand-subtitle {
   font-size: 14px;
+  font-weight: 300;
   color: #666;
   margin: 0;
 }
@@ -96,8 +97,8 @@ body {
 .nav-links a {
   color: #345c72;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 900;
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.3s;
@@ -245,7 +246,7 @@ body {
   justify-content: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: #345c72;
+  background:  #ffede6;
   gap: 20px;
   border-radius: 5px;
   border: 2px solid var(--main-color);
@@ -357,7 +358,7 @@ body {
   height: 48px;
   margin-right: 16px;
   padding: 8px;
-  background: #3b82f6;
+  background: #ffede6;
   border-radius: 8px;
 }
 
@@ -435,16 +436,14 @@ body {
       margin-top: 20px;
   }
 }
-
-/* From Uiverse.io by 0x-Sarthak */ 
 .cta {
   position: relative;
   margin: auto;
   padding: 11.5px 18px;
   transition: all 0.2s ease;
-  border: 3px solid  #3b82f6;
+  border: 3px solid #ffede6;
   border-radius: 50px;
-  background:  #3b82f6;
+  background: #ffede6;
   cursor: pointer;
 }
 
@@ -455,25 +454,31 @@ body {
   right: 0;
   display: block;
   border-radius: 50px;
-  background: white;
+  background: black;
   width: 45px;
   height: 45px;
   transition: all 0.8s ease;
+  color: black;
 }
 
 .cta span {
   position: relative;
-  font-family: Montserrat;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
-  color: white;
-  font-weight: 400;
+  color: black;  
+  font-weight: 600;
   letter-spacing: 0.05em;
+  transition: color 0.3s ease;  
+}
+
+.cta:hover span {  
+  color: #ffede6;
 }
 
 .cta svg {
   position: relative;
   top: 0;
-  margin-left: 10px;
+  margin-left: 15px;
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -481,19 +486,23 @@ body {
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.5s ease;
+  color: black;
 }
 
 .cta:hover:before {
   width: 100%;
   background: #1c1c1c;
+  color: black;
 }
 
 .cta:hover svg {
   transform: translateX(0);
   transition: all 2s ease;
+  color: black;
 }
 
 .cta:active {
   transform: scale(0.95);
   transition: all 2s ease;
+  color: #ffede6;
 }
