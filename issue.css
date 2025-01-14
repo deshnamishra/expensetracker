@@ -2,6 +2,7 @@
 body {
     min-height: 100vh;
     background: linear-gradient(to bottom right, #e6f3ff, #d1e9ff);
+    font-family: 'Courier New', Courier, monospace;
   }
 
 .container {
@@ -18,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #EDDCD9;
+    background-color:  #ffede6;
     height: 500px;
     width: 500px;
     border: 2px solid #264143;
