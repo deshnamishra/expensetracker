@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e6f3ff, #d1e9ff);
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: relative;
+    top: 20px;
+    width: 90%;
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    z-index: 10;
+  }
+  
+  /* Keep all your existing CSS styles here */
+  /* ... */
+  
+  /* Add any new React-specific styles below */
+  .link-active {
+    background-color: #f0f7ff;
+  }
+  
+  .expense-form-container {
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      width: 95%;
+      padding: 0 20px;
+    }
+    
+    .brand-subtitle {
+      display: none;
+    }
+    
+    .nav-links {
+      gap: 15px;
+    }
+    
+    .nav-links a {
+      padding: 6px 12px;
+    }
+  
+    .main-content {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+  }
+
+  /* Contact Form Styles */
+  .contact-subtitle {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .form-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: #646cff;
+  }
+
+  .message-input {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .submit-btn {
+    background-color: #646cff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: #535bf2;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .info-item {
+    margin: 10px 0;
+  }
+
+  .info-label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #646cff;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 10px;
+    }
+    
+    .form-input {
+      font-size: 14px;
+    }
+    
+    .submit-btn {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+
+  /* Contact Button Styles */
+  .contact-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .contact-button {
+    background-color: #646cff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-button:hover {
+    background-color: #535bf2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
